@@ -56,14 +56,16 @@
 <!-- 📈 成长轨迹 -->
 <h2 align="center">📈 成长轨迹</h2>
 
-<!-- 贪吃蛇动画（深灰方块 + 紫色系定制） -->
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/LeChuangDev/LeChuangDev/output/github-snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/LeChuangDev/LeChuangDev/output/github-snake.svg">
-    <img alt="贡献贪吃蛇" src="https://raw.githubusercontent.com/LeChuangDev/LeChuangDev/output/github-snake-dark.svg" width="100%" style="border-radius: 12px;">
-  </picture>
+<!-- 贪吃蛇动画（深灰底色防裁切 + 暗格配色） -->
+<p align="center" style="background: #0a0a0f; padding: 20px 24px; border-radius: 14px; border: 1px solid #1f1f2e; max-width: 920px; margin: 0 auto;">
+  <img
+    alt="贡献贪吃蛇"
+    src="https://raw.githubusercontent.com/LeChuangDev/LeChuangDev/output/github-snake-dark.svg"
+    width="100%"
+    style="border-radius: 8px; display: block;" />
 </p>
+
+<br>
 
 <p align="center">
   <a href="https://github.com/LeChuangDev">
