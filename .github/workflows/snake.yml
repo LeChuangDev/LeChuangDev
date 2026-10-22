@@ -8,14 +8,16 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: 生成贪吃蛇动图
         uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/github-snake.svg
-            dist/github-snake-dark.svg
+            dist/github-snake.svg?color_snake=#7c3aed&color_dots=#1e1e2e,#2d1b69,#512da8,#7c3aed,#a855f7
+            dist/github-snake-dark.svg?color_snake=#a855f7&color_dots=#1e1e2e,#2d1b69,#512da8,#7c3aed,#a855f7
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
