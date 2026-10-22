@@ -85,7 +85,7 @@
 
 <p align="center">
   <b>嵌入式与底层</b><br>
-  <img src="https://skillicons.dev/icons?i=vscode,c,cpp,rust,python,arduino,raspberrypi,linux&theme=dark" />
+  <img src="https://skillicons.dev/icons?i=c,cpp,rust,python,arduino,raspberrypi,linux&theme=dark" />
 </p>
 
 <p align="center">

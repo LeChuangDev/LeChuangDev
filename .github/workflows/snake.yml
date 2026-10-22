@@ -2,9 +2,8 @@ name: 生成贡献贪吃蛇动画
 
 on:
   schedule:
-    # 每天 UTC 0 点自动运行（北京时间 8:00）
     - cron: "0 0 * * *"
-  workflow_dispatch: # 允许在页面手动触发运行
+  workflow_dispatch:
 
 jobs:
   build:
@@ -14,24 +13,14 @@ jobs:
         uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
-          # 输出深浅两个版本，自动适配系统主题
           outputs: |
             dist/github-snake.svg
             dist/github-snake-dark.svg
-          # 暗黑模式紫黑定制配色（从底色到深紫、亮紫）
-          palette: |
-            [
-              "#0a0a0f",
-              "#2d1b69",
-              "#512da8",
-              "#7c3aed",
-              "#a855f7"
-            ]
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: 推送到 output 分支
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
