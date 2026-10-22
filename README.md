@@ -1,6 +1,6 @@
 <!-- 顶部紫黑渐变波浪 -->
 <a href="https://github.com/LeChuangDev">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a0a0f,100:4a148c&height=200&section=header&text=LeChuangDev&fontSize=64&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=全栈工程师%20·%20从硅片到云端全链路实践者&descAlignY=58&descSize=18" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a0a0f,100:4a148c&height=200&section=header&text=LeChuangDev&fontSize=64&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=全栈工程师%20·%20云原生实践者%20·%20从硅片到云端&descAlignY=58&descSize=18" />
 </a>
 
 <!-- 社交徽章 -->
@@ -17,15 +17,12 @@
   <a href="mailto:dev@zhangwenle.com">
     <img src="https://img.shields.io/badge/邮箱-4a148c?style=for-the-badge&logo=gmail&logoColor=white" />
   </a>
-  <a href="https://twitter.com/你的Twitter账号">
-    <img src="https://img.shields.io/badge/Twitter-161b22?style=for-the-badge&logo=twitter&logoColor=1DA1F2" />
-  </a>
 </p>
 
 <!-- 渐变分割线 -->
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
-<!-- 个人简介 -->
+<!-- 个人档案 -->
 <h2 align="center">🧬 个人档案</h2>
 <table align="center" style="border: none; max-width: 900px;">
   <tr>
@@ -57,7 +54,7 @@
 <!-- 渐变分割线 -->
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
-<!-- 开发工具与理念 -->
+<!-- 研发工具链 -->
 <h2 align="center">🛠️ 研发工具链</h2>
 <p align="center">
   <b>工程化准则</b><br>
@@ -83,12 +80,12 @@
 <!-- 渐变分割线 -->
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
-<!-- 技术栈矩阵 -->
+<!-- 技术栈 -->
 <h2 align="center">🛸 技术栈</h2>
 
 <p align="center">
   <b>嵌入式与底层</b><br>
-  <img src="https://skillicons.dev/icons?i=c,cpp,rust,python,arduino,raspberrypi,linux&theme=dark" />
+  <img src="https://skillicons.dev/icons?i=vscode,c,cpp,rust,python,arduino,raspberrypi,linux&theme=dark" />
 </p>
 
 <p align="center">
@@ -109,8 +106,18 @@
 <!-- 渐变分割线 -->
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
-<!-- GitHub 数据 -->
+<!-- 成长轨迹 + 贪吃蛇 -->
 <h2 align="center">📈 成长轨迹</h2>
+
+<!-- 贪吃蛇动画 -->
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/LeChuangDev/LeChuangDev/output/github-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/LeChuangDev/LeChuangDev/output/github-snake.svg">
+    <img alt="贡献贪吃蛇" src="https://raw.githubusercontent.com/LeChuangDev/LeChuangDev/output/github-snake.svg" width="100%">
+  </picture>
+</p>
+
 <p align="center">
   <a href="https://github.com/LeChuangDev">
     <img width="45%" src="https://github-readme-streak-stats.herokuapp.com/?user=LeChuangDev&theme=tokyonight&hide_border=true&border_radius=16&date_format=M%20j%5B%2C%20Y%5D" />
@@ -124,7 +131,7 @@
 <!-- 渐变分割线 -->
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
-<!-- 自动更新区域 -->
+<!-- 动态更新区域 -->
 <h2 align="center">📚 动态更新</h2>
 <!-- code_time starts -->
 <!-- code_time ends -->
