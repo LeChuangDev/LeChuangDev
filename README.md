@@ -25,31 +25,33 @@
 <!-- 🧬 个人档案 -->
 <h2 align="center">🧬 个人档案</h2>
 
-<p align="center">
-  <img src="https://github.com/LeChuangDev.png" width="104" alt="头像" />
-</p>
+<table align="center" border="0">
+  <tr>
+    <td align="center" valign="middle" width="220">
+      <img src="https://github.com/LeChuangDev.png" width="110" alt="LeChuangDev" />
+      <br><br>
+      <strong>LeChuangDev</strong>
+      <br>
+      <sub>全栈工程师 · 软硬系统设计者</sub>
+    </td>
+    <td valign="middle" align="left">
+      贯通硬件工程与云原生开发的全栈工程师，专注从原理图设计、嵌入式固件<br>
+      到 Web 应用、容器化部署的全链条技术落地。<br>
+      信奉工程化方法论，以数据驱动调试，追求稳定可复现的技术实现。
+    </td>
+  </tr>
+</table>
 
-<p align="center">
-  <b>LeChuangDev</b><br>
-  <sub>全栈工程师 · 软硬系统设计者</sub>
-</p>
+<br>
 
-<p align="center">
-  贯通硬件工程与云原生开发的全栈工程师，专注从原理图设计、嵌入式固件<br>
-  到 Web 应用、容器化部署的全链条技术落地。<br>
-  信奉工程化方法论，以数据驱动调试，追求稳定可复现的技术实现。
-</p>
-
-<div align="center">
-
-🔌 &nbsp;<b>电源系统</b>：DC-DC 拓扑设计、纹波抑制、能效优化与热管理<br>
-🛠️ &nbsp;<b>PCB 工程</b>：多层板 Layout、地平面分割、功率回路与信号完整性<br>
-🧠 &nbsp;<b>嵌入式开发</b>：STM32/ESP32 裸机固件、寄存器级配置、非阻塞状态机<br>
-🎯 &nbsp;<b>控制算法</b>：PID 工程化实现、抗饱和、微分先行与死区补偿<br>
-🌐 &nbsp;<b>全栈开发</b>：前后端架构设计、产品级应用交付与性能优化<br>
-☁️ &nbsp;<b>云原生运维</b>：Docker/K8s 容器化、高可用部署与全链路运维
-
-</div>
+<table align="center" border="0">
+  <tr><td>🔌 &nbsp; <b>电源系统</b>：DC-DC 拓扑设计、纹波抑制、能效优化与热管理</td></tr>
+  <tr><td>🛠️ &nbsp; <b>PCB 工程</b>：多层板 Layout、地平面分割、功率回路与信号完整性</td></tr>
+  <tr><td>🧠 &nbsp; <b>嵌入式开发</b>：STM32/ESP32 裸机固件、寄存器级配置、非阻塞状态机</td></tr>
+  <tr><td>🎯 &nbsp; <b>控制算法</b>：PID 工程化实现、抗饱和、微分先行与死区补偿</td></tr>
+  <tr><td>🌐 &nbsp; <b>全栈开发</b>：前后端架构设计、产品级应用交付与性能优化</td></tr>
+  <tr><td>☁️ &nbsp; <b>云原生运维</b>：Docker/K8s 容器化、高可用部署与全链路运维</td></tr>
+</table>
 
 <!-- 渐变分割线 -->
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
@@ -65,19 +67,11 @@
        src="https://raw.githubusercontent.com/LeChuangDev/LeChuangDev/output/github-snake-dark.svg?v=1#gh-dark-mode-only" />
 </p>
 
-<p align="center">
-  <sub>贡献贪吃蛇 · 每日 08:00 (UTC+8) 自动重构</sub>
-</p>
-
 <br>
 
+<!-- 两张统计卡：42% : 58% 是按固有宽高比(495×195 / 700×200)算出的等高等宽比，勿随意改 -->
 <p align="center">
-  <a href="https://github.com/LeChuangDev">
-    <img width="48%" src="https://streak-stats.demolab.com?user=LeChuangDev&theme=tokyonight&hide_border=true&border_radius=12&locale=zh_Hans&date_format=Y%5B-%5Dm%5B-%5Dd" alt="连续贡献" />
-  </a>
-  <a href="https://github.com/LeChuangDev">
-    <img width="48%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=LeChuangDev&theme=tokyonight" alt="档案概览" />
-  </a>
+  <a href="https://github.com/LeChuangDev"><img alt="连续贡献" width="42%" src="https://streak-stats.demolab.com?user=LeChuangDev&theme=tokyonight&hide_border=true&border_radius=12&locale=zh_Hans" /></a><a href="https://github.com/LeChuangDev"><img alt="档案概览" width="58%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=LeChuangDev&theme=tokyonight" /></a>
 </p>
 
 <!-- 渐变分割线 -->
@@ -103,7 +97,7 @@
 
 <p align="center">
   <b>云原生与运维</b><br><br>
-  <img src="https://skillicons.dev/icons?i=docker,kubernetes,git,githubactions,linux,bash&theme=dark" alt="云原生" />
+  <img src="https://skillicons.dev/icons?i=docker,kubernetes,terraform,prometheus,git,githubactions,bash&theme=dark" alt="云原生" />
 </p>
 
 <!-- 渐变分割线 -->
@@ -138,15 +132,11 @@
 <!-- 渐变分割线 -->
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
-<!-- 📚 动态更新 -->
+<!-- 📚 动态更新（标记内由 build_readme.py 自动填充，勿手改标记本身） -->
 <h2 align="center">📚 动态更新</h2>
-
 <!-- code_time starts -->
-> 编码时长统计待生成，运行 `.github/workflows/build_readme.yml` 后自动填充
 <!-- code_time ends -->
-
 <!-- blog starts -->
-> 最新文章列表待生成，配置 `BLOG_FEED_URL` 后自动填充
 <!-- blog ends -->
 
 <!-- 底部波浪 -->
