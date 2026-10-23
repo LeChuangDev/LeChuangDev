@@ -5,6 +5,10 @@ on:
     - cron: "0 0 * * *"
   workflow_dispatch:
 
+concurrency:
+  group: snake
+  cancel-in-progress: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -16,10 +20,23 @@ jobs:
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/github-snake.svg?color_snake=#a855f7&color_dots=#1a1a24,#242438,#3b2a6b,#5b3fbf,#a855f7
-            dist/github-snake-dark.svg?color_snake=#c084fc&color_dots=#17171f,#222233,#3a2a66,#5b3fbf,#c084fc
+            dist/github-snake.svg?palette=github-light&color_snake=%234a148c&color_dots=%23ebedf0,%23ede9fe,%23c4b5fd,%238b5cf6,%235b3fbf
+            dist/github-snake-dark.svg?palette=github-dark&color_snake=%23e9d5ff&color_dots=%23161b22,%232e2657,%234a3489,%236d3fc4,%23a855f7
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # 参数没生效时让流水线直接红，而不是静默部署一张默认配色图
+      - name: 校验配色是否生效
+        run: |
+          set -euo pipefail
+          test -f dist/github-snake.svg
+          test -f dist/github-snake-dark.svg
+          grep -q '4a148c' dist/github-snake.svg
+          grep -q '8b5cf6' dist/github-snake.svg
+          grep -q 'e9d5ff' dist/github-snake-dark.svg
+          grep -q 'a855f7' dist/github-snake-dark.svg
+          ! grep -q -- '--ce:#ebedf0' dist/github-snake-dark.svg
+          echo "✅ 配色参数已生效"
 
       - name: 推送到 output 分支
         uses: peaceiris/actions-gh-pages@v4
