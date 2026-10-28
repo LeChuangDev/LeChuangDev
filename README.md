@@ -8,12 +8,6 @@
   <a href="https://github.com/LeChuangDev">
     <img src="https://img.shields.io/badge/GitHub-161b22?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
   </a>
-  <a href="https://space.bilibili.com/你的B站UID">
-    <img src="https://img.shields.io/badge/B站-161b22?style=for-the-badge&logo=bilibili&logoColor=ff69b4" alt="B站" />
-  </a>
-  <a href="https://seachen.cn">
-    <img src="https://img.shields.io/badge/博客-161b22?style=for-the-badge&logo=hexo&logoColor=00C7B7" alt="博客" />
-  </a>
   <a href="mailto:dev@zhangwenle.com">
     <img src="https://img.shields.io/badge/邮箱-4a148c?style=for-the-badge&logo=gmail&logoColor=white" alt="邮箱" />
   </a>
@@ -52,6 +46,71 @@
   <tr><td>🌐 &nbsp; <b>全栈开发</b>：前后端架构设计、产品级应用交付与性能优化</td></tr>
   <tr><td>☁️ &nbsp; <b>云原生运维</b>：Docker/K8s 容器化、高可用部署与全链路运维</td></tr>
 </table>
+
+<!-- 渐变分割线 -->
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+
+<!-- 🚀 精选项目 -->
+<h2 align="center">🚀 精选项目</h2>
+
+<table align="center" border="0" width="100%">
+  <tr>
+    <td width="50%" valign="top">
+      <h3>⚡ <a href="https://github.com/LeChuangDev/G431_Volt">G431_Volt</a></h3>
+      <sub>STM32G431 数控电源固件：CV/CC 双环 + USB-PD 输入协商 + 全链路保护，裸机 C，无 HAL / 无 RTOS</sub>
+      <br><br>
+      <code>C</code> <code>STM32G431</code> <code>USB-PD</code> <code>OpenOCD</code>
+    </td>
+    <td width="50%" valign="top">
+      <h3>🔋 <a href="https://github.com/LeChuangDev/adjustable-power">adjustable-power</a></h3>
+      <sub>ESP-IDF 数控可调电源：分层架构解耦、ADC 采样闭环、多重保护与 OTA 升级</sub>
+      <br><br>
+      <code>C</code> <code>ESP-IDF</code> <code>PID</code> <code>OTA</code>
+    </td>
+  </tr>
+</table>
+
+<table align="center" border="0" width="100%">
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🔌 <a href="https://github.com/LeChuangDev/serial_tool">serial_tool</a></h3>
+      <sub>PyQt6 深色串口调试终端：ASCII/HEX 双模、CRC16 校验、ESP32 一键复位、热插拔检测与日志归档</sub>
+      <br><br>
+      <code>Python</code> <code>PyQt6</code> <code>pyserial</code>
+    </td>
+    <td width="50%" valign="top">
+      <h3>🧩 <a href="https://github.com/LeChuangDev/mcu-demo-templates">mcu-demo-templates</a></h3>
+      <sub>ARM-GCC + CMake 固件工程模板：AT435 / GD32F407 / STM32F407 三套开箱即用 Demo</sub>
+      <br><br>
+      <code>C</code> <code>CMake</code> <code>ARM-GCC</code> <code>Ninja</code>
+    </td>
+  </tr>
+</table>
+
+<table align="center" border="0" width="100%">
+  <tr>
+    <td width="50%" valign="top">
+      <h3>📟 <a href="https://github.com/LeChuangDev/stm32-demos">stm32-demos</a></h3>
+      <sub>STM32 外设 Demo 集：GPIO / I2C / SPI / ADC，覆盖 F103 / F407 / H743 平台</sub>
+      <br><br>
+      <code>C</code> <code>STM32</code> <code>裸机</code>
+    </td>
+    <td width="50%" valign="top">
+      <h3>📚 硬件设计知识库</h3>
+      <sub>
+        <a href="https://github.com/LeChuangDev/pcb-basics-notes">PCB 与无源器件</a> ·
+        <a href="https://github.com/LeChuangDev/LeChuang-KiCad-Notes">KiCad 全流程</a> ·
+        <a href="https://github.com/LeChuangDev/Leeco-Jialichuang-EDA-Notes">嘉立创 EDA 资料</a>
+      </sub>
+      <br><br>
+      <code>Markdown</code> <code>Obsidian</code> <code>KiCad</code> <code>立创EDA</code>
+    </td>
+  </tr>
+</table>
+
+<p align="center">
+  <a href="https://github.com/LeChuangDev?tab=repositories"><b>查看全部仓库 →</b></a>
+</p>
 
 <!-- 渐变分割线 -->
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
@@ -122,22 +181,24 @@
   <img src="https://img.shields.io/badge/Keil_MDK-1e1e2e?style=for-the-badge&logo=arm&logoColor=00979D" alt="Keil MDK" />
   <img src="https://img.shields.io/badge/ARM_GCC-1e1e2e?style=for-the-badge&logo=arm&logoColor=0091BD" alt="ARM GCC" />
   <img src="https://img.shields.io/badge/CMake-1e1e2e?style=for-the-badge&logo=cmake&logoColor=064F8C" alt="CMake" />
+  <img src="https://img.shields.io/badge/OpenOCD-1e1e2e?style=for-the-badge&logoColor=white" alt="OpenOCD" />
   <br><br>
+  <img src="https://img.shields.io/badge/STM32CubeMX-1e1e2e?style=for-the-badge&logo=stmicroelectronics&logoColor=3B9EDB" alt="STM32CubeMX" />
+  <img src="https://img.shields.io/badge/ESP--IDF-1e1e2e?style=for-the-badge&logo=espressif&logoColor=E7352C" alt="ESP-IDF" />
+  <img src="https://img.shields.io/badge/PlatformIO-1e1e2e?style=for-the-badge&logo=platformio&logoColor=F5822A" alt="PlatformIO" />
   <img src="https://img.shields.io/badge/KiCad-1e1e2e?style=for-the-badge&logo=kicad&logoColor=314CB0" alt="KiCad" />
-  <img src="https://img.shields.io/badge/立创EDA-1e1e2e?style=for-the-badge&logo=electronic-arts&logoColor=FFB300" alt="立创EDA" />
-  <img src="https://img.shields.io/badge/示波器-1e1e2e?style=for-the-badge&logo=oscilloscope&logoColor=ffffff" alt="示波器" />
-  <img src="https://img.shields.io/badge/逻辑分析仪-1e1e2e?style=for-the-badge&logo=hardware&logoColor=cccccc" alt="逻辑分析仪" />
+  <img src="https://img.shields.io/badge/立创EDA-1e1e2e?style=for-the-badge&logo=easyeda&logoColor=1765F5" alt="立创EDA" />
+  <br><br>
+  <img src="https://img.shields.io/badge/示波器-1e1e2e?style=for-the-badge" alt="示波器" />
+  <img src="https://img.shields.io/badge/逻辑分析仪-1e1e2e?style=for-the-badge" alt="逻辑分析仪" />
 </p>
 
 <!-- 渐变分割线 -->
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
-<!-- 📚 动态更新（标记内由 build_readme.py 自动填充，勿手改标记本身） -->
-<h2 align="center">📚 动态更新</h2>
+<!-- 📊 动态更新：标题与正文均由 build_readme.py 生成，无数据时整段不显示 -->
 <!-- code_time starts -->
 <!-- code_time ends -->
-<!-- blog starts -->
-<!-- blog ends -->
 
 <!-- 底部波浪 -->
 <a href="https://github.com/LeChuangDev">

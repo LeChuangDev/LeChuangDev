@@ -30,7 +30,6 @@ jobs:
       - name: 生成 README 动态内容
         env:
           # 在 Settings → Secrets and variables → Actions → Variables 里配置
-          BLOG_FEED_URL: ${{ vars.BLOG_FEED_URL }}
           WAKATIME_RAW_URL: ${{ vars.WAKATIME_RAW_URL }}
         run: python build_readme.py
 
