@@ -19,9 +19,12 @@ jobs:
         uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
+          # color_dots 的第一位是空网格底色，后四位由浅到深；
+          # snk 会用同一组颜色绘制底部进度条，低位色必须和页面背景拉开对比，
+          # 否则浅色模式下进度条左段会“消失”。
           outputs: |
-            dist/github-snake.svg?palette=github-light&color_snake=%234a148c&color_dots=%23ebedf0,%23ede9fe,%23c4b5fd,%238b5cf6,%235b3fbf
-            dist/github-snake-dark.svg?palette=github-dark&color_snake=%23e9d5ff&color_dots=%23161b22,%232e2657,%234a3489,%236d3fc4,%23a855f7
+            dist/github-snake.svg?palette=github-light&color_snake=%234a148c&color_dots=%23ebedf0,%23d8b4fe,%23a78bfa,%237c3aed,%234a148c
+            dist/github-snake-dark.svg?palette=github-dark&color_snake=%23e9d5ff&color_dots=%23161b22,%233b2f6b,%235b3fbf,%238b5cf6,%23c084fc
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -32,9 +35,11 @@ jobs:
           test -f dist/github-snake.svg
           test -f dist/github-snake-dark.svg
           grep -q '4a148c' dist/github-snake.svg
-          grep -q '8b5cf6' dist/github-snake.svg
+          grep -q 'd8b4fe' dist/github-snake.svg
+          grep -q '7c3aed' dist/github-snake.svg
           grep -q 'e9d5ff' dist/github-snake-dark.svg
-          grep -q 'a855f7' dist/github-snake-dark.svg
+          grep -q '8b5cf6' dist/github-snake-dark.svg
+          grep -q 'c084fc' dist/github-snake-dark.svg
           ! grep -q -- '--ce:#ebedf0' dist/github-snake-dark.svg
           echo "✅ 配色参数已生效"
 
