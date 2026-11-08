@@ -35,7 +35,7 @@
     </td>
     <td width="50%" valign="top">
       <a href="https://github.com/LeChuangDev/leeco-partshub"><img src="assets/shots/partshub.png" width="400" alt="樂創元件库总览看板界面"></a><br>
-      <b><a href="https://github.com/LeChuangDev/leeco-partshub">樂創元件库</a></b><br>
+      <b><a href="https://github.com/LeChuangDev/leeco-partshub">Leeco-PartsHub</a></b><br>
       <sub>元器件库存系统：订单导入、批次库位、扫码出入库与 BOM 齐套，静态前端 + 边缘 KV。</sub><br><br>
       <code>Vue 3</code> <code>TypeScript</code> <code>EdgeOne</code>
     </td>
