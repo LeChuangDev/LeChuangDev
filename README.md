@@ -6,7 +6,7 @@
 
 <p align="center">
   <b>全栈工程师</b> · 电源拓扑 / 嵌入式固件 / Web 与云原生<br>
-  <sub>从电路板到容器，全链路自己动手。</sub>
+  <sub>从电路板到容器，整条链路亲手打通。</sub>
 </p>
 
 <p align="center">
@@ -17,9 +17,9 @@
 
 ## 概览
 
-电源与嵌入式出身，把同一套工程方法带到 Web 与云上：**先测量、再假设，一次只改一个变量**。桌边常年是示波器、逻辑分析仪和一摞 PCB；也写上位机与 Web 全栈，用容器把它们长期跑起来。
+从电源与嵌入式起步，把同一套工程方法带到 Web 与云上：**先测量，后假设，一次只改一个变量**。桌上常年摆着示波器、逻辑分析仪和一摞 PCB；也做上位机与 Web 全栈，用容器让服务长期稳定运行。
 
-> 最近在做：把串口调试和固件烧录搬进浏览器 —— 纯前端 Web Serial，固件不出本机。
+> 最近在做的，是把串口调试与固件烧录搬进浏览器：纯前端 Web Serial，固件不出本机。
 
 ## 软件项目
 
@@ -55,7 +55,7 @@
     <td width="50%" valign="top">
       <a href="https://github.com/LeChuangDev/serial_tool"><img src="assets/shots/serial.png" width="400" alt="Leeco-Serial 绘图模式界面"></a><br>
       <b><a href="https://github.com/LeChuangDev/serial_tool">Leeco-Serial</a></b><br>
-      <sub>串口调试终端：终端与 VOFA+ 风格实时绘图双模，掉线自动重连、CRC16、定时发送。</sub><br><br>
+      <sub>串口调试终端：命令行与 VOFA+ 风格实时绘图双模，掉线自动重连、CRC16、定时发送。</sub><br><br>
       <code>Python</code> <code>PyQt6</code> <code>pyserial</code>
     </td>
   </tr>
@@ -63,7 +63,7 @@
 
 ## 硬件与固件
 
-<sub>一块板子、一台电源，都是自己画、自己调、自己写固件。</sub>
+<sub>板子自己画，电路自己调，固件自己写。</sub>
 
 <table>
   <tr>
@@ -99,7 +99,7 @@
 
 > **先测量后假设** —— 用示波器与逻辑分析仪收敛问题，不靠猜。<br>
 > **单变量迭代** —— 一次只改一处，让根因无处可藏。<br>
-> **全流程沉淀** —— 每个项目都留文档，让经验下次还能用。
+> **全流程沉淀** —— 每个项目都留文档，让经验可以复用。
 
 ## 成长轨迹
 
