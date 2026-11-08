@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="340" viewBox="0 0 1280 340" role="img" aria-label="LeChuangDev - From silicon to cloud">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.85" y2="1">
+      <stop offset="0" stop-color="#FCFBFF"/>
+      <stop offset="1" stop-color="#F3F0FC"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.78" cy="0.12" r="0.72">
+      <stop offset="0" stop-color="#6D28D9" stop-opacity="0.2"/>
+      <stop offset="0.5" stop-color="#6D28D9" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="#6D28D9" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="fadeDown" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0.55" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.85"/>
+    </linearGradient>
+    <linearGradient id="scan" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6D28D9" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#6D28D9" stop-opacity="0.1"/>
+      <stop offset="1" stop-color="#6D28D9" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#0B0D12" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+    <clipPath id="chipInner">
+      <rect x="968" y="108" width="116" height="124" rx="8"/>
+    </clipPath>
+  </defs>
+
+  <rect width="1280" height="340" rx="18" fill="url(#bg)"/>
+  <rect width="1280" height="340" rx="18" fill="url(#grid)"/>
+  <rect width="1280" height="340" rx="18" fill="url(#glow)"/>
+  <rect width="1280" height="340" rx="18" fill="url(#fadeDown)"/>
+
+  <!-- 电路走线：左侧来自硅片，右侧通向云端 -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <g stroke="#6D28D9" stroke-opacity="0.55" stroke-width="1.6">
+      <path d="M938 116H876V84H804"/>
+      <path d="M938 144H852V172H768"/>
+      <path d="M938 172H844V212H700"/>
+    </g>
+    <g stroke="#0891B2" stroke-opacity="0.32" stroke-width="1.6">
+      <path d="M1114 144H1172V112H1240"/>
+      <path d="M1114 200H1192V236H1252"/>
+    </g>
+  </g>
+
+  <!-- 走线上流动的信号 -->
+  <g>
+    <circle r="3.2" fill="#7C3AED" opacity="0">
+      <animateMotion dur="3.4s" begin="0.2s" repeatCount="indefinite" path="M938 116H876V84H804"/>
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.12;0.72;1" dur="3.4s" begin="0.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="3.2" fill="#7C3AED" opacity="0">
+      <animateMotion dur="4.1s" begin="1.1s" repeatCount="indefinite" path="M938 144H852V172H768"/>
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.12;0.72;1" dur="4.1s" begin="1.1s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="3.2" fill="#7C3AED" opacity="0">
+      <animateMotion dur="4.8s" begin="2.0s" repeatCount="indefinite" path="M938 172H844V212H700"/>
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.12;0.72;1" dur="4.8s" begin="2.0s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="2.8" fill="#0E7490" opacity="0">
+      <animateMotion dur="3.0s" begin="1.4s" repeatCount="indefinite" path="M1114 144H1172V112H1240"/>
+      <animate attributeName="opacity" values="0;0.8;0.8;0" keyTimes="0;0.12;0.72;1" dur="3.0s" begin="1.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="2.8" fill="#0E7490" opacity="0">
+      <animateMotion dur="3.8s" begin="2.5s" repeatCount="indefinite" path="M1114 200H1192V236H1252"/>
+      <animate attributeName="opacity" values="0;0.8;0.8;0" keyTimes="0;0.12;0.72;1" dur="3.8s" begin="2.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- 过孔 -->
+  <g>
+    <circle cx="804" cy="84" r="3.4" fill="#6D28D9" fill-opacity="0.9"/>
+    <circle cx="804" cy="84" r="7.6" fill="none" stroke="#6D28D9" stroke-opacity="0.3" stroke-width="1.2"/>
+    <circle cx="768" cy="172" r="3.4" fill="#6D28D9" fill-opacity="0.9"/>
+    <circle cx="768" cy="172" r="7.6" fill="none" stroke="#6D28D9" stroke-opacity="0.3" stroke-width="1.2"/>
+    <circle cx="700" cy="212" r="3.4" fill="#6D28D9" fill-opacity="0.9"/>
+    <circle cx="700" cy="212" r="7.6" fill="none" stroke="#6D28D9" stroke-opacity="0.3" stroke-width="1.2"/>
+    <circle cx="1240" cy="112" r="3" fill="#0891B2" fill-opacity="0.75"/>
+    <circle cx="1252" cy="236" r="3" fill="#0891B2" fill-opacity="0.75"/>
+  </g>
+
+  <!-- 芯片：引脚 -->
+  <g stroke="#6D28D9" stroke-opacity="0.55" stroke-width="1.6" stroke-linecap="round">
+    <path d="M938 116h14M938 144h14M938 172h14M938 200h14M938 228h14"/>
+    <path d="M1100 116h14M1100 144h14M1100 172h14M1100 200h14M1100 228h14"/>
+  </g>
+  <!-- 芯片：本体 -->
+  <rect x="952" y="92" width="148" height="156" rx="12" fill="#F9F6FF" stroke="#6D28D9" stroke-opacity="0.6" stroke-width="1.6"/>
+  <rect x="968" y="108" width="116" height="124" rx="8" fill="none" stroke="#6D28D9" stroke-opacity="0.34" stroke-width="1.2"/>
+  <!-- 芯片：逐行扫描的光带 -->
+  <g clip-path="url(#chipInner)">
+    <rect x="968" y="96" width="116" height="34" fill="url(#scan)">
+      <animate attributeName="y" values="94;216;94" dur="6.5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  <!-- 芯片：核心与呼吸环 -->
+  <circle cx="1026" cy="152" r="13" fill="none" stroke="#6D28D9" stroke-opacity="0.45" stroke-width="1.4"/>
+  <circle cx="1026" cy="152" r="13" fill="none" stroke="#6D28D9" stroke-width="1.2">
+    <animate attributeName="r" values="13;24;13" dur="3.6s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="0.5;0;0.5" dur="3.6s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1026" cy="152" r="4" fill="#6D28D9" fill-opacity="0.9">
+    <animate attributeName="r" values="4;5.4;4" dur="2.4s" repeatCount="indefinite"/>
+  </circle>
+  <path d="M1013 152h-18M1039 152h18M1026 139v-18M1026 165v18" stroke="#6D28D9" stroke-opacity="0.25" stroke-width="1.2" stroke-linecap="round"/>
+
+  <!-- 左侧文字 -->
+  <g font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,system-ui,sans-serif">
+    <text x="72" y="110" font-size="12" letter-spacing="4.4" fill="#6F7686">FULL-STACK ENGINEER</text>
+    <text x="70" y="184" font-size="58" font-weight="700" letter-spacing="-1.4" fill="#14161C">LeChuangDev</text>
+    <rect x="72" y="206" width="56" height="3" rx="1.5" fill="#6D28D9"/>
+  </g>
+
+  <!-- 终端提示符下轮播的三句自述 -->
+  <g font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace">
+    <rect x="72" y="239" width="8" height="12" rx="1.5" fill="#6D28D9" opacity="0.9">
+      <animate attributeName="opacity" values="0.9;0.9;0;0" keyTimes="0;0.48;0.5;1" dur="1.05s" repeatCount="indefinite"/>
+    </rect>
+    <text x="92" y="249" font-size="13.5" letter-spacing="3.2" fill="#4B5563">FROM SILICON TO CLOUD
+      <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.3;0.33;1" dur="15s" begin="0s" repeatCount="indefinite"/>
+    </text>
+    <text x="92" y="249" font-size="13.5" letter-spacing="3.2" fill="#4B5563" opacity="0">POWER · FIRMWARE · WEB · CLOUD
+      <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.02;0.3;0.33;1" dur="15s" begin="5s" repeatCount="indefinite"/>
+    </text>
+    <text x="92" y="249" font-size="13.5" letter-spacing="3.2" fill="#4B5563" opacity="0">先测量 · 后假设 · 单变量迭代
+      <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.02;0.3;0.33;1" dur="15s" begin="10s" repeatCount="indefinite"/>
+    </text>
+    <text x="72" y="278" font-size="12" letter-spacing="2.2" fill="#6F7686">zhangwenle.com　·　github.com/LeChuangDev</text>
+  </g>
+
+  <rect x="0.5" y="0.5" width="1279" height="339" rx="17.5" fill="none" stroke="#E2DEF2" stroke-width="1"/>
+</svg>

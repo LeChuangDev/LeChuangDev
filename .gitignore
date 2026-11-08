@@ -1,0 +1,6 @@
+# 本地设计预览产物（截图 + 预览 HTML）
+.preview/
+
+# 本地协作数据与缓存
+.workbuddy/
+__pycache__/

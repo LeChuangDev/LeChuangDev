@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="286" viewBox="0 0 1280 286" role="img" aria-label="技术栈：power / firmware / web / cloud / tooling">
+  <defs>
+    <linearGradient id="panel" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0" stop-color="#11151D"/>
+      <stop offset="0.18" stop-color="#0C0F15"/>
+      <stop offset="1" stop-color="#0C0F15"/>
+    </linearGradient>
+    <radialGradient id="tglow" cx="0.1" cy="0" r="0.9">
+      <stop offset="0" stop-color="#8B5CF6" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#8B5CF6" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="tgrid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0V28" fill="none" stroke="#FFFFFF" stroke-opacity="0.065" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1280" height="286" rx="16" fill="url(#panel)"/>
+  <rect width="1280" height="286" rx="16" fill="url(#tgrid)"/>
+  <rect width="1280" height="286" rx="16" fill="url(#tglow)"/>
+
+  <!-- 窗口标题栏 -->
+  <path d="M0 16a16 16 0 0 1 16-16h1248a16 16 0 0 1 16 16v30H0z" fill="#11151D"/>
+  <circle cx="34" cy="26" r="5" fill="#F87171"/>
+  <circle cx="52" cy="26" r="5" fill="#FBBF24"/>
+  <circle cx="70" cy="26" r="5" fill="#34D399"/>
+  <text x="94" y="30" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="11.5" letter-spacing="1.2" fill="#5C6678">stack — zsh — 1280×286</text>
+  <line x1="0" y1="46" x2="1280" y2="46" stroke="#232A37" stroke-width="1"/>
+
+  <g font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="15">
+    <text x="48" y="84" fill="#E9E5FF">$ stack --list
+      <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.02;0.07;1" dur="3s" repeatCount="1"/>
+    </text>
+    <g>
+      <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.07;0.12;1" dur="3s" repeatCount="1"/>
+      <text x="48" y="126" fill="#A78BFA">power</text>
+      <text x="176" y="126" fill="#CBD5E1">DC-DC 拓扑 · 纹波抑制 · 热设计 · 多层板 Layout</text>
+    </g>
+    <g>
+      <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.10;0.15;1" dur="3s" repeatCount="1"/>
+      <text x="48" y="158" fill="#A78BFA">firmware</text>
+      <text x="176" y="158" fill="#CBD5E1">STM32 · ESP32 · 裸机 C · FreeRTOS · CMSIS · USB-PD</text>
+    </g>
+    <g>
+      <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.13;0.18;1" dur="3s" repeatCount="1"/>
+      <text x="48" y="190" fill="#A78BFA">web</text>
+      <text x="176" y="190" fill="#CBD5E1">Astro · Vue · TypeScript · Tailwind · Vite</text>
+    </g>
+    <g>
+      <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.16;0.21;1" dur="3s" repeatCount="1"/>
+      <text x="48" y="222" fill="#A78BFA">cloud</text>
+      <text x="176" y="222" fill="#CBD5E1">Docker · Kubernetes · Nginx · GitHub Actions</text>
+    </g>
+    <g>
+      <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.19;0.24;1" dur="3s" repeatCount="1"/>
+      <text x="48" y="254" fill="#A78BFA">tooling</text>
+      <text x="176" y="254" fill="#CBD5E1">KiCad · 立创 EDA · PyQt6 · Playwright</text>
+    </g>
+    <rect x="48" y="266" width="9" height="15" fill="#8B5CF6" opacity="0">
+      <animate attributeName="opacity" values="0;0.9;0.9;0;0" keyTimes="0;0.01;0.5;0.52;1" dur="3.4s" begin="3.2s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- 右侧：示波器式的实时信号，作为留白的视觉配重 -->
+  <line x1="742" y1="70" x2="742" y2="262" stroke="#232A37" stroke-width="1"/>
+  <g font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace">
+    <text x="778" y="84" font-size="11" letter-spacing="2.4" fill="#5C6678">LIVE SIGNAL</text>
+    <text x="1226" y="84" font-size="11" letter-spacing="1.6" fill="#5C6678" text-anchor="end">CH1 · 1 kHz</text>
+    <g stroke="#FFFFFF" stroke-opacity="0.06" stroke-width="1">
+      <path d="M778 120H1226M778 160H1226M778 200H1226M778 240H1226"/>
+      <path d="M838 96V252M930 96V252M1022 96V252M1114 96V252M1206 96V252"/>
+    </g>
+    <path d="M778 180H1226" stroke="#8B5CF6" stroke-opacity="0.18" stroke-width="1" stroke-dasharray="3 5"/>
+    <path d="M778.0 180 L836.2 180 L851.9 186 L867.6 174 L883.3 180 L903.4 180 L912.4 204 L921.4 134 L930.3 194 L939.3 180 L966.2 180 L979.6 166 L993.0 180 L1002.0 180 L1002.0 180 L1060.2 180 L1075.9 186 L1091.6 174 L1107.3 180 L1127.4 180 L1136.4 204 L1145.4 134 L1154.3 194 L1163.3 180 L1190.2 180 L1203.6 166 L1217.0 180 L1226.0 180" fill="none" stroke="#8B5CF6" stroke-opacity="0.22" stroke-width="1.6" stroke-linejoin="round"/>
+    <path d="M778.0 180 L836.2 180 L851.9 186 L867.6 174 L883.3 180 L903.4 180 L912.4 204 L921.4 134 L930.3 194 L939.3 180 L966.2 180 L979.6 166 L993.0 180 L1002.0 180 L1002.0 180 L1060.2 180 L1075.9 186 L1091.6 174 L1107.3 180 L1127.4 180 L1136.4 204 L1145.4 134 L1154.3 194 L1163.3 180 L1190.2 180 L1203.6 166 L1217.0 180 L1226.0 180" fill="none" stroke="#C4B5FD" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"
+          pathLength="1000" stroke-dasharray="86 914">
+      <animate attributeName="stroke-dashoffset" values="0;-1000" dur="7s" repeatCount="indefinite"/>
+    </path>
+    <circle cx="778" cy="180" r="3" fill="#22D3EE">
+      <animate attributeName="opacity" values="0.35;1;0.35" dur="2.8s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <rect x="0.5" y="0.5" width="1279" height="285" rx="15.5" fill="none" stroke="#232A37" stroke-width="1"/>
+</svg>

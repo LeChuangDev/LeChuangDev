@@ -63,9 +63,10 @@ def fetch_code_time() -> str | None:
         print("[warn] 编码时长内容不可用，跳过", file=sys.stderr)
         return None
 
+    # 标题层级与写法要和 README 正文的分区保持一致，避免动态区块另成一派
     return (
-        '<h2 align="center">📊 编码时长</h2>\n\n'
-        '<p align="center"><sub>数据来自 WakaTime</sub></p>\n\n'
+        "## 编码时长\n\n"
+        "<sub>数据来自 WakaTime，每天由 Actions 更新。</sub>\n\n"
         "```text\n" + text + "\n```"
     )
 
