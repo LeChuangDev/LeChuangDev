@@ -116,7 +116,7 @@ BANNER = """<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="340" vi
     <g stroke="{accent}" stroke-opacity="0.55" stroke-width="1.6">
 {left_paths}
     </g>
-    <g stroke="{cyan}" stroke-opacity="0.32" stroke-width="1.6">
+    <g stroke="{accent}" stroke-opacity="0.55" stroke-width="1.6">
 {right_paths}
     </g>
   </g>
@@ -309,7 +309,7 @@ def build(theme: str) -> None:
     for i, path in enumerate(TRACES_RIGHT):
         dur = 3.0 + i * 0.8
         pulses.append(
-            f'    <circle r="2.8" fill="{c["cyan_pulse"]}" opacity="0">\n'
+            f'    <circle r="2.8" fill="{c["pulse"]}" opacity="0">\n'
             f'      <animateMotion dur="{dur}s" begin="{1.4 + i * 1.1:.1f}s" repeatCount="indefinite" path="{path}"/>\n'
             f'      <animate attributeName="opacity" values="0;0.8;0.8;0" keyTimes="0;0.12;0.72;1" '
             f'dur="{dur}s" begin="{1.4 + i * 1.1:.1f}s" repeatCount="indefinite"/>\n'
@@ -323,7 +323,7 @@ def build(theme: str) -> None:
             f'    <circle cx="{x}" cy="{y}" r="7.6" fill="none" stroke="{c["accent"]}" stroke-opacity="0.3" stroke-width="1.2"/>'
         )
     for x, y in VIAS_RIGHT:
-        vias.append(f'    <circle cx="{x}" cy="{y}" r="3" fill="{c["cyan"]}" fill-opacity="0.75"/>')
+        vias.append(f'    <circle cx="{x}" cy="{y}" r="3" fill="{c["accent"]}" fill-opacity="0.75"/>')
 
     svg = BANNER.format(left_paths=left_paths, right_paths=right_paths, pulses="\n".join(pulses), vias="\n".join(vias), **c)
     (ASSETS / f"banner-{theme}.svg").write_text(svg, encoding="utf-8")
